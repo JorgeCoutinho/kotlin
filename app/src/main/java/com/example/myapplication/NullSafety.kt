@@ -1,4 +1,4 @@
-
+package com.example.myapplication
 
 class Carro {
 
@@ -11,3 +11,10 @@ class Carro {
 
 }
 
+fun main() {
+
+    var carro: Carro? = null
+
+    println( carro?.cor )
+
+}
