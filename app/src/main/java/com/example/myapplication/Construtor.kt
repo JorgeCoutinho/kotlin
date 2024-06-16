@@ -1,20 +1,30 @@
+import com.example.myapplication.Usuario
 
 
-class Usuario constructor(){// Contrutor primario
-
-    var nome: String = ""
+class Usuario constructor(// Construtor primario
+    var nome: String = "",
     var sobrenome: String = ""
+){// Contrutor primario
 
     init {
+        //this.nome = nome
+        //this.sobrenome = sobrenome
         println("Objeto inicializado")
+        println("nome: $nome sobrenome: $sobrenome")
     }
+
+    constructor(nome: String): this(nome, sobrenome = ""){// Construtor primario
+        println("construtor secundario")
+    }
+
+
 
 }
 
 
 fun main() {
 
-    val usuario = Usuario()
+    val usuario = Usuario("mikael")
 
 }
 
